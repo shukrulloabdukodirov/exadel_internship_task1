@@ -1,0 +1,17 @@
+commit cf68399b143232e85062f662cfe941a9dd35c684
+Author: Shukrullo Abduqodirov <abduqodirov0101@gmail.com>
+Date:   Wed Jun 15 16:38:03 2022 +0500
+
+    Readme and gitignore is added
+
+commit 2333d6d05884f9355d4435f39f93b9009a5cb90d
+Author: Shukrullo Abduqodirov <abduqodirov0101@gmail.com>
+Date:   Wed Jun 15 16:32:37 2022 +0500
+
+    Test file for dev
+
+commit e0ce466dd941ae98fbb71451ceb443134f443b93
+Author: Shukrullo Abduqodirov <abduqodirov0101@gmail.com>
+Date:   Wed Jun 15 16:21:39 2022 +0500
+
+    Created Task1/README.md
