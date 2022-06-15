@@ -1,0 +1,34 @@
+name: GitHub Actions Demo
+on: [push]
+env: 
+  DEPLOY_VER: ${{ github.sha }}
+  YEAR: 1999
+jobs:
+  First-Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: List files in the repository
+        run: |
+          ls -lar ${{ github.workspace }}
+      - name: Content of log.txt file
+        run: cat ${{ github.workspace }}/Task1/log.txt
+      - name: Print hello
+        run: echo "Hello from $DEPLOY_VER commit"
+  Second-Job:
+    needs: First-Job
+    runs-on: ubuntu-latest
+    env: 
+      MONTH: JANUARY
+    steps:
+      - name: Print the system date and time
+        run: date
+      - name: Print my variable’s content
+        run: echo "Day - $DAY_OF_THE_MONTH; Month - $MONTH; Year - $YEAR."
+        env:
+          DAY_OF_THE_MONTH: 14
+      - name: Using secret keys
+        run: echo "$FAVORITE_DAY_OF_WEEK"
+        env: 
+          FAVORITE_DAY_OF_WEEK: ${{ secrets.FAVORITE_DAY_OF_WEEK }}
