@@ -3,9 +3,8 @@ Main dashboard of AWS console\
 2. \ ![](./images/cost_management.png) \
 dashboard of cost management\
 3. \ ![](./images/ec2_main.png) \
-Using ec2 dashboard it is possible to create new instances \
-4.\ 
- ![img.png](images/ec2_connect.png) \
+Using ec2 dashboard it is possible to create new instances\
+4. \ ![img.png](images/ec2_connect.png) \
 By pressing "CONNECT" it is possible to see info for connecting to instance via ssh.
 For authorization while connecting it is used OpenSsh key which is generated at the time creating instance\
 5.\ 
