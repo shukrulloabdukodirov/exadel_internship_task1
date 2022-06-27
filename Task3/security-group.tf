@@ -1,7 +1,7 @@
 # Create Security Group for the Application Load Balancer
 # terraform aws create security group
 resource "aws_security_group" "public-security-group" {
-  name        = "ALB Security Group"
+  name        = "Public Security Group"
   description = "Enable HTTP/HTTPS access on Port 80/443"
   vpc_id      = aws_vpc.vpc.id
 

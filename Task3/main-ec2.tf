@@ -19,7 +19,11 @@ resource "aws_instance" "ubuntu_server" {
   subnet_id = aws_subnet.public-subnet-1.id
   vpc_security_group_ids = [aws_security_group.webserver-security-group.id]
   key_name = "ec2_for_work"
-  user_data = file("install-nginx-and-docker.sh")
+  root_block_device {
+    delete_on_termination = true
+    volume_size = 30
+    volume_type = "gp3"
+  }
   tags = {
     Name = "UbuntuServer"
   }
@@ -28,6 +32,7 @@ resource "aws_instance" "centos_server" {
   ami           = var.ami_centos
   instance_type = var.instance_type_micro
   subnet_id = aws_subnet.private-subnet-1.id
+  key_name = "ec2_for_work"
   tags = {
     Name = "CentOsServer"
   }

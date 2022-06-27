@@ -1,3 +1,5 @@
 .*
 !.gitignore
 !.github
+./Task3/terraform.tfstate.backup
+./Task3/terraform.tfstate
