@@ -6,8 +6,6 @@ RUN mkdir -p /var/www/my-app/tech
 RUN rm -rf /var/www/html/index.nginx-debian.html
 COPY ./app/index.html  /var/www/my-app/tech/
 COPY ./my-app.conf /etc/nginx/sites-available/
-RUN rm -f /etc/nginx/nginx.conf
-COPY  ./nginx.conf  /etc/nginx/
 RUN rm -f /etc/nginx/sites-enabled/*
 RUN ln -s /etc/nginx/sites-available/my-app /etc/nginx/sites-enabled/
 EXPOSE 80:80
