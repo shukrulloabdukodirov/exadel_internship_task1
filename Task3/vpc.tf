@@ -2,8 +2,6 @@
 # terraform aws create vpc
 resource "aws_vpc" "vpc" {
   cidr_block              = var.cidr_vpc
-  instance_tenancy        = "default"
-  enable_dns_hostnames    = true
 
   tags      = {
     Name    = "Test VPC"
@@ -41,6 +39,10 @@ resource "aws_route_table" "public-route-table" {
   route {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.internet-gateway.id
+  }
+  route {
+    ipv6_cidr_block = "::/0"
+    gateway_id      = aws_internet_gateway.internet-gateway.id
   }
 
   tags       = {
