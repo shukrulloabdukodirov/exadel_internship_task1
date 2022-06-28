@@ -7,6 +7,6 @@ RUN rm -rf /var/www/html/index.nginx-debian.html
 COPY ./app/index.html  /var/www/my-app/tech/
 COPY ./my-app.conf /etc/nginx/sites-available/
 RUN rm -f /etc/nginx/sites-enabled/*
-RUN ln -s /etc/nginx/sites-available/my-app /etc/nginx/sites-enabled/
+RUN ln -s /etc/nginx/sites-available/my-app.conf /etc/nginx/sites-enabled/
 EXPOSE 80:80
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
