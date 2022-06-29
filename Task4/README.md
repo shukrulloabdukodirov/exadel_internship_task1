@@ -1,4 +1,5 @@
 1.Install docker. (Hint: please use VMs or Clouds  for this.)
+
 ##Linux install by documentation
 
 2.Find, download and run any docker container "hello world". (Learn commands and parameters to create/run docker containers.
@@ -9,6 +10,7 @@
 4. docker ps -a
    
 3.1.Create your Dockerfile for building a docker image. Your docker image should run any web application (nginx, apache, httpd). Web application should be located inside the docker image.
+
 ##Steps:
 1. Docker file in ./Task4/Dockerfile for building my app image
 2. docker build -t my-app:1.0 .
@@ -24,6 +26,7 @@ EXTRA 3.1.1.For creating docker image use clear basic images (ubuntu, centos, al
 EXTRA 3.2.1.Print environment variable with the value on a web page (if environment variable changed after container restart - the web page must be updated with a new value)
 
 4.Push your docker image to docker hub (https://hub.docker.com/). Create any description for your Docker image.
+
 ##link to dockerhub
 1.link to image repo: https://hub.docker.com/repository/docker/shukrulloabdukodirov/exdelmyapp
 
@@ -34,6 +37,7 @@ EXTRA 4.1.Integrate your docker image and your github repository. Create an auto
     second image - any java application;
     last image - any database image (mysql, postgresql, mongo or etc.).
     Second container should be run right after a successful run of a database container.
+
 ##Comments:
 1.depends_on param used 
 
