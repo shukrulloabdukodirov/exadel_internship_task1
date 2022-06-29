@@ -23,9 +23,9 @@ EXTRA 3.1.1.For creating docker image use clear basic images (ubuntu, centos, al
 ##done by using ENV in dockerfile 
 EXTRA 3.2.1.Print environment variable with the value on a web page (if environment variable changed after container restart - the web page must be updated with a new value)
 
-4. 
-    ##link to dockerhub
-    1.link to image repo: https://hub.docker.com/repository/docker/shukrulloabdukodirov/exdelmyapp
+4.Push your docker image to docker hub (https://hub.docker.com/). Create any description for your Docker image.
+##link to dockerhub
+1.link to image repo: https://hub.docker.com/repository/docker/shukrulloabdukodirov/exdelmyapp
 
 EXTRA 4.1.Integrate your docker image and your github repository. Create an automatic deployment for each push. (The Deployment can be in the “Pending” status for 10-20 minutes. This is normal).
 
