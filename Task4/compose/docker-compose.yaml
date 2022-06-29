@@ -5,7 +5,7 @@ services:
     ports:
       - '81:80'
   server:
-    image: shukrulloabdukodirov/backendjavaapp
+    image: shukrulloabdukodirov/backendjavaapp:1.0
     ports:
       - "8080:8080"
     environment:
