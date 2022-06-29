@@ -8,5 +8,6 @@ COPY ./app/index.html  /var/www/my-app/tech/
 COPY ./my-app.conf /etc/nginx/sites-available/
 RUN rm -f /etc/nginx/sites-enabled/*
 RUN ln -s /etc/nginx/sites-available/my-app.conf /etc/nginx/sites-enabled/
+ENV DEVOPS=shukrullo
 EXPOSE 80:80
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
