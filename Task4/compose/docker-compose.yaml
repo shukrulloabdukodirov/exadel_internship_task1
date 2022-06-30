@@ -11,8 +11,6 @@ services:
         limits:
           cpus: "0.1"
           memory: 70M
-    ports:
-      - '81:80'
   server:
     image: shukrulloabdukodirov/backendjavaapp:1.0
     ports:
