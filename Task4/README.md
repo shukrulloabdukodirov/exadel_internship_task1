@@ -1,130 +1,135 @@
-**TASK-4**
+﻿**TASK-4**
 
 1. **Installing docker:**
 
-Official documentation: [https://docs.docker.com/engein/install/ubuntu/](https://docs.docker.com/engein/install/ubuntu/)
+Official documentation: <https://docs.docker.com/engein/install/ubuntu/>
 
-_ **Commands:** _
+***Commands:***
 
-1. _sudo apt-get update_
-2. _sudo apt-get install \ ca-certificates \ curl \ gnupg \ lsb-release_
-3. _sudo mkdir -p /etc/apt/keyrings_
-4. _curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg_
-5. _echo \&quot;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg]https://download.docker.com/linux/ubuntu \$(lsb\_release -cs) stable&quot; | sudo tee /etc/apt/sources.list.d/docker.list \&gt; /dev/null_
+1. *sudo apt-get update*
+2. *sudo apt-get install \ ca-certificates \ curl \ gnupg \ lsb-release*
+3. *sudo mkdir -p /etc/apt/keyrings*
+4. *curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg*
+5. *echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg]https://download.docker.com/linux/ubuntu \$(lsb\_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null*
 
-_The last step is shows the result whether docker installed correctly or not:_
+*The last step is shows the result whether docker installed correctly or not:*
 
-1. _ **sudo docker run hello-world** _
+6. ***sudo docker run hello-world*** 
 
-_ **Result:** _
+***Result:***
 
-![](RackMultipart20220630-1-dk5p0p_html_7f40404f19ab8a3f.png)
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.001.png)
 
-1. **Find download create and run docker container**
+2. **Find download create and run docker container**
 
 **Commands:**
+1. **
+   ` `*docker pull ${image\_name} -* downloads image from: [*https://hub.docker.com/*](https://hub.docker.com/)
 
-1. _docker pull ${image\_name} -_ downloads image from: [_https://hub.docker.com/_](https://hub.docker.com/)
+**Example:** *docker pull redis*
 
-**Example:** _docker pull redis_
+2. ** docker run {image\_name} **-** pulls and runs image
 
-1. docker run {image\_name} **-** pulls and runs image
+**Example:** *docker run -p 6000:3000 -d --name redis-older redis:4.0*
 
-**Example:** _docker run -p 6000:3000 -d --name redis-older redis:4.0_
+`	`*-p is for port bind. First value is port of the host second is port of the container*
 
-_-p is for port bind. First value is port of the host second is port of the container_
+`	`*-d is for running in detached mode. It runs in the background.*
 
-_-d is for running in detached mode. It runs in the background._
+`	`*--name is for registering image locally with specified name*
 
-_--name is for registering image locally with specified name_
+`	`*redis:4.0 : redis is name of image form hub. 4.0 is the tag if this image.*
 
-_redis:4.0 : redis is name of image form hub. 4.0 is the tag if this image._
 
-1. _docker images_
-
-**Result:**
-
-![](RackMultipart20220630-1-dk5p0p_html_5b1cb19d083005c2.png)
-
-1. docker ps -a | docker ps (list of all containers | list of running containers)
-
-**Result** :
-
-![](RackMultipart20220630-1-dk5p0p_html_467d290c28a782ff.png)
-
-![](RackMultipart20220630-1-dk5p0p_html_121f7ed6c60bac50.png)
-
-1. docker logs ${container\_id}: log of container
+3. *docker images*
 
 **Result:**
 
-![](RackMultipart20220630-1-dk5p0p_html_558ae09bdd04e8b8.png)
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.002.png)
 
-1. docker start | stop | rm | rmi
+4. docker ps -a | docker ps (list of all containers | list of running containers)
 
-_docker stop ${container\_id} -_ stops container
+**Result**:
 
-_docker start ${container\_id} -_ start container
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.003.png)
 
-_docker rm ${container\_id} -_ delete container
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.004.png)
 
-_docker rmi ${image id} -_ delete image
+5. ` `docker logs ${container\_id}: log of container
 
-**Additional usefull:**
+**Result:** 
 
-docker stop $(docker ps -a -q) - stops all containers
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.005.png)
 
-docker rm $(docker ps -a -q) - deletes all containers
+6. docker start | stop | rm | rmi
+
+`	`*docker stop ${container\_id} -*  stops container
+
+`	`*docker start ${container\_id} -* start container
+
+`	`*docker rm ${container\_id} -* delete container
+
+`	`*docker rmi ${image id} -* delete image
+
+`	`**Additional usefull:**
+
+`	`docker stop $(docker ps -a -q) - stops all containers
+
+`	`docker rm $(docker ps -a -q) - deletes all containers
 
 **3.1.** Docker file
 
-![](RackMultipart20220630-1-dk5p0p_html_3cde97d43aefc547.png)
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.006.png)
 
-**Commands:**
+` `**Commands:**
 
 1. FROM is for downloading image
 2. RUN is an image build step, the state of the container after a RUN command will be committed to the container image. A Dockerfile can have many RUN steps that layer on top of one another to build the image.
 3. COPY is copies project folder into container path
 4. CMD is the command the container executes by default when you launch the built image. A Dockerfile will only use the final CMD defined.
 
-1. _docker build -t my-app:1.0 . -_ builds image form docker file
 
-. - is path to Dockerfile
+
+5. *docker build -t my-app:1.0 . -* builds image form docker file
+
+`	`. - is path to Dockerfile
 
 **Result:**
 
-![](RackMultipart20220630-1-dk5p0p_html_ad7f6a2dd6a880fc.png)
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.007.png)
 
-**3.1.1**
+**3.1.1** 
 
 1. ENV values are available to containers, but also RUN-style commands during the Docker build starting with the line where they are introduced.
 
-**Example:** RUN echo &quot;$DEVOPS&quot;
+**Example:** RUN echo "$DEVOPS"
 
 **4.** Push docker image to docker hub
 
-1. _docker build -t my-app:3.0 . for build image_
+1. *docker build -t my-app:3.0 . for build  image*
 
 **Result:**
 
-![](RackMultipart20220630-1-dk5p0p_html_2ac504e8fa653123.png)
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.008.png)
 
-1. _docker tag my-app:3.0 shukrulloabdukodirov/exdelmyapp:3.0_
+2. *docker tag my-app:3.0 shukrulloabdukodirov/exdelmyapp:3.0*
 
 **Result:**
 
-![](RackMultipart20220630-1-dk5p0p_html_b1112acfccc54b4e.png)
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.009.png)
 
-1. _docker push shukrulloabdukodirov/exdelmyapp:3.0_
+3. *docker push  shukrulloabdukodirov/exdelmyapp:3.0*
 
-_Result:_
+*Result:*
 
-![](RackMultipart20220630-1-dk5p0p_html_fcdaaf87d38da9c1.png)
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.010.png)
 
-![](RackMultipart20220630-1-dk5p0p_html_ec37d60135257b3e.png)
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.011.png)
 
-5. Multiple container via one compose file
+**5.** Multiple container via one compose file
 
-![](RackMultipart20220630-1-dk5p0p_html_5716afa264ef263a.png)
 
-![](RackMultipart20220630-1-dk5p0p_html_73aa02ebae824b78.png)
+
+![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.012.png)
+
+`	`![](Readme/Aspose.Words.cd484c58-7cf4-4f61-9f47-efdcc4b2c755.013.png)
