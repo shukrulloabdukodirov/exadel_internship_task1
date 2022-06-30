@@ -1,0 +1,17 @@
+2022-06-30 04:50:54+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.38-1debian10 started.
+2022-06-30 04:50:54+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2022-06-30 04:50:54+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.38-1debian10 started.
+2022-06-30 04:50:55+00:00 [Note] [Entrypoint]: Initializing database files
+2022-06-30 04:51:00+00:00 [Note] [Entrypoint]: Database files initialized
+2022-06-30 04:51:00+00:00 [Note] [Entrypoint]: Starting temporary server
+2022-06-30 04:51:00+00:00 [Note] [Entrypoint]: Waiting for server startup
+2022-06-30 04:51:01+00:00 [Note] [Entrypoint]: Temporary server started.
+2022-06-30 04:51:04+00:00 [Note] [Entrypoint]: Creating database employeedb
+2022-06-30 04:51:04+00:00 [Note] [Entrypoint]: Creating user sa
+2022-06-30 04:51:04+00:00 [Note] [Entrypoint]: Giving user sa access to schema employeedb
+
+2022-06-30 04:51:04+00:00 [Note] [Entrypoint]: Stopping temporary server
+2022-06-30 04:51:06+00:00 [Note] [Entrypoint]: Temporary server stopped
+
+2022-06-30 04:51:06+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+

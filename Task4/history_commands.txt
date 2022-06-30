@@ -1,0 +1,277 @@
+history
+    1  ls
+    2  cd ../
+    3  ls  -lar
+    4  cd /
+    5  ls -lar
+    6  sudo apt-get update
+    7  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+    8  sudo mkdir -p /etc/apt/keyrings
+    9  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   10  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   11    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   12  sudo apt-get update
+   13  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   14  docker pull postgres
+   15  docker pull redis
+   16  docker images
+   17  docker ps
+   18  docker network ls
+   19  ping localhost
+   20  curl localhost
+   21  docker images
+   22  cd /var/html
+   23  cd /var/www
+   24  cd /var
+   25  ls -lart
+   26  docker rmi 1397b9d2e8fb
+   27  docker imahes
+   28  docker images
+   29  cd /home/ubuntu/exadel_internship_tasks/Task4
+   30  git pull origin main
+   31  cd ../
+   32  git pull origin main
+   33  cd Task4
+   34  docker build -t myapp:1.0 . 
+   35  cd /var
+   36  ls 
+   37  docker -exec -it /bin/bash
+   38  docker exec -it /bin/bash
+   39  docker images
+   40  docker run -d --name myapp myapp:1.0
+   41  docker containers
+   42  docker ps
+   43  docker run -d myapp
+   44  docker run -d myapp:1.0
+   45  docker ps
+   46  docker ps -a
+   47  docker start 5de47cb26cb0
+   48  docker ps -a
+   49  docker ps 
+   50  docker ps -a
+   51  docker logs 5de47cb26cb0
+   52  docker exec -it 5de47cb26cb0 /bin/bash
+   53  cd /etc
+   54  ls -lar
+   55  ls -lart | grep nginx
+   56  find nginx
+   57  cd /
+   58  ls -lart
+   59  docker logs 5de47cb26cb0
+   60  cd /home/ubuntu/exadel_internship_tasks/Task4
+   61  git pull origin main
+   62  docker ps
+   63  docker ps -a
+   64  docker rm 5de47cb26cb0
+   65  docker rm d73dd20757c7
+   66  docker rm 30eeef4c8bbd
+   67  docker images
+   68  docker rmi myapp
+   69  docker rmi myapp:1.0
+   70  docker build -t myapp:1.0
+   71  docker build -t myapp:1.0 .
+   72  docker images
+   73  docker run -d --name my-app myapp:1.0
+   74  docker ps
+   75  docker exec -it /bin/bash
+   76  docker exec -it ec5db9ed2728 /bin/bash
+   77  ping localhost
+   78  curl localhost:80
+   79  curl localhost:81
+   80  docker run -d -p 81:80 --name my-appp myapp:1.0
+   81  curl localhost:81
+   82  docker tag myapp:1.0 shukrulloabdukodirov/exdelmyapp
+   83  docker images
+   84  docker push shukrulloabdukodirov/exdelmyapp
+   85  docker login
+   86  docker push shukrulloabdukodirov/exdelmyapp
+   87  exit
+   88  docker ps -a
+   89  docker ps
+   90  docker stop ec5db9ed2728
+   91  docker rm ec5db9ed2728
+   92  docker ps 0a
+   93  docker ps 
+   94  docker ps -a 
+   95  docker images
+   96  ls -lart
+   97  cd exadel_internship_tasks/
+   98  cd task4
+   99  ls 
+  100  cd Task4
+  101  git clone https://github.com/Kanchana46/spring-boot-backend.git
+  102  ls 
+  103  git pull origin main
+  104  git add ./
+  105  git push commit -m 'spring boot'
+  106  git commit -m 'spring boot'
+  107  git config --global user.name "shukrulloabdukodirov"
+  108  git config --global user.email "shukrulloabdukodirov@gmail.com"
+  109  git commit -m 'spring boot'
+  110  git push origin main
+  111  ls -t
+  112  cd spring-boot-backend/
+  113  ls
+  114  docker build -t backend .
+  115  cd ../
+  116  git add ./
+  117  git commit -m 'spring boot'
+  118  cd spring-boot-backend/
+  119  ls -lart
+  120  cd ../
+  121  rm --help
+  122  rm -r spring-boot-backend/
+  123  ls -lart
+  124  git clone https://github.com/Kanchana46/spring-boot-backend.git
+  125  cd spring-boot-backend/
+  126  ls -lart
+  127  rm -r .git
+  128  ls -lart
+  129  cd ../
+  130  gitg add ./
+  131  git add ./
+  132  git commit -m 'spring boot'
+  133  git push origin main
+  134  rm -r spring-boot-backend/
+  135  git add ./
+  136  git commit -m 'spring boot'
+  137  git push origin main
+  138  git clone https://github.com/Kanchana46/spring-boot-backend.git
+  139  cd spring-boot-backend/
+  140  rm -r .git
+  141  ls -lart
+  142  cd ../
+  143  git add ./
+  144  git push orgin main
+  145  git commit -m 'spring boot'
+  146  git push orgin main
+  147  git push origin main
+  148  git pull origin main
+  149  docker images
+  150  docker ps
+  151  docker ps -a
+  152  cd spring-boot-backend/
+  153  docker build -t backendjavaapp .
+  154  docker tag backendjavaapp shukrulloabdukodirov/backendjavaapp:1.0
+  155  docker images
+  156  docker push shukrulloabdukodirov/backendjavaapp:1.0
+  157  git pull origin main
+  158  docker ps -a
+  159  docker stop c3dff317296e
+  160  docker rm c3dff317296e
+  161  docker ps
+  162  docker images
+  163  docker rmi e68988f2e0a9
+  164  docker rmi -f e68988f2e0a9
+  165  docker images
+  166  docker rmi -f 2674b5936f1c
+  167  docker images
+  168  docker rmi -f 2a8331246713
+  169  docker images 
+  170  docker rmi -f 27941809078c
+  171  cd ../
+  172  git pull origin main
+  173  cd compose/
+  174  docker-compose -f docker-compose.yaml up
+  175  apt install docker-compose
+  176  docker-compose -f docker-compose.yaml up
+  177  docker ps -a
+  178  docker images
+  179  git pull origin main
+  180  docker-compose -f docker-compose.yaml up
+  181  docker images
+  182  cd ../
+  183  ls -lar
+  184  docker build -t myappinserver .
+  185  docker ps
+  186  docker run 57cab3071107
+  187  docker run -d -p 81:80 myappinserver
+  188  docker ps
+  189  docker images
+  190  docker run -d -p 3306:3306 mysql
+  191  docker run -d -p 8081:8080 shukrulloabdukodirov/backendjavaapp
+  192  docker run -d -p 8081:8080 shukrulloabdukodirov/backendjavaapp:1.0
+  193  docker ps -a
+  194  docker run -d -p 3306:3306 mysql:5.7
+  195  docker ps -a
+  196  docker log ffc5d100f2e3
+  197  docker rm ffc5d100f2e3 520d87c4245e 5981b70ec75a 08ba70026120 1ad324c4a2f1 0a58947f69ce
+  198  docker ps -a
+  199  docker rm 2301d2788486
+  200  docker ps -a
+  201  docker images
+  202  docker run -d -p 3306:3306 --name mysql mysql:5.7
+  203  docker ps -a
+  204  curl localhost:3306
+  205  curl localhost:8081
+  206  docker run -d -p 8081:8080 shukrulloabdukodirov/backendjavaapp:1.0
+  207  docker ps -a
+  208  curl localhost:8081
+  209  curl localhost:81
+  210  curl localhost:80
+  211  curl localhost:81/tech
+  212  ping localhost"8081
+  213  ping localhost:8081
+  214  ping 127.0.0.1:8081
+  215  curl 127.0.0.1:8081
+  216  docker ps -a
+  217  docker start 272265cf4809
+  218  docker ps -a
+  219  curl 127.0.0.1:8081
+  220  docker ps -a
+  221  docker start 272265cf4809
+  222  docker ps -a
+  223  docker logs 272265cf4809
+  224  docker ps -a
+  225  cd compose/
+  226  docker-compose -f docker-compose.yaml up
+  227  docker ps -a
+  228  docker logs 4da2157f05d8
+  229  docker ps -a
+  230  curl localhost:3306
+  231  docker ps -a
+  232  mysql
+  233  docker stop $ (docker ps -a -q)
+  234  docker stop $(docker ps -a -q)
+  235  docker rm $(docker ps -a -q)
+  236  docker ps 
+  237  docker images
+  238  docker images -q
+  239  docker rmi $(docker images -q)
+  240  docker-compose -f docker-compose.yaml up
+  241  docker ps -a
+  242  docker start
+  243  docker start 9a6e5d915b45
+  244  docker rm $(docker ps -a -q)
+  245  docker stop $(docker ps -a -q)
+  246  docker rm $(docker ps -a -q)
+  247  docker rmi $(docker images -q)
+  248  docker images
+  249  cd ../
+  250  docker build -t my-app .
+  251  docker tag docker images
+  252  docker images
+  253  docker tag my-app shukrulloabdukodirov/exdelmyapp:latest
+  254  docker push  shukrulloabdukodirov/exdelmyapp:latest
+  255  docker push  shukrulloabdukodirov/exdelmyapp:2.0
+  256  docker push  shukrulloabdukodirov/exdelmyapp
+  257  docker run -d -p 81:80 my-app
+  258  docker ps -a
+  259  exit
+  260  docker ps -a
+  261  docker exec -it 939ba175d236  mysql -uroot -p
+  262  docker exec -it 939ba175d236  mysql -uroot 
+  263  docker exec -it 939ba175d236  mysql -uroot -p
+  264  docker ps -a
+  265  docker exec -it 939ba175d236  mysql -uroot -p
+  266  curl 172.18.0.4
+  267  history
+  268  cat history >> history_commands.log
+  269  echi history > history_commands.txt
+  270  echo history > history_commands.txt
+  271  cat history_commands.txt
+  272  history
+  273  vim history_commands.txt
+  274  cat history >> history_commands.log
+  275  cat history >> history_commands.txt
+  276  history >> history_commands.txt
