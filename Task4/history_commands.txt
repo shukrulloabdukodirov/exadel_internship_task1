@@ -1,4 +1,3 @@
-history
     1  ls
     2  cd ../
     3  ls  -lar
@@ -32,9 +31,9 @@ history
    31  cd ../
    32  git pull origin main
    33  cd Task4
-   34  docker build -t myapp:1.0 . 
+   34  docker build -t myapp:1.0 .
    35  cd /var
-   36  ls 
+   36  ls
    37  docker -exec -it /bin/bash
    38  docker exec -it /bin/bash
    39  docker images
@@ -47,7 +46,7 @@ history
    46  docker ps -a
    47  docker start 5de47cb26cb0
    48  docker ps -a
-   49  docker ps 
+   49  docker ps
    50  docker ps -a
    51  docker logs 5de47cb26cb0
    52  docker exec -it 5de47cb26cb0 /bin/bash
@@ -91,16 +90,16 @@ history
    90  docker stop ec5db9ed2728
    91  docker rm ec5db9ed2728
    92  docker ps 0a
-   93  docker ps 
-   94  docker ps -a 
+   93  docker ps
+   94  docker ps -a
    95  docker images
    96  ls -lart
    97  cd exadel_internship_tasks/
    98  cd task4
-   99  ls 
+   99  ls
   100  cd Task4
   101  git clone https://github.com/Kanchana46/spring-boot-backend.git
-  102  ls 
+  102  ls
   103  git pull origin main
   104  git add ./
   105  git push commit -m 'spring boot'
@@ -167,7 +166,7 @@ history
   166  docker rmi -f 2674b5936f1c
   167  docker images
   168  docker rmi -f 2a8331246713
-  169  docker images 
+  169  docker images
   170  docker rmi -f 27941809078c
   171  cd ../
   172  git pull origin main
@@ -234,7 +233,7 @@ history
   233  docker stop $ (docker ps -a -q)
   234  docker stop $(docker ps -a -q)
   235  docker rm $(docker ps -a -q)
-  236  docker ps 
+  236  docker ps
   237  docker images
   238  docker images -q
   239  docker rmi $(docker images -q)
@@ -260,7 +259,7 @@ history
   259  exit
   260  docker ps -a
   261  docker exec -it 939ba175d236  mysql -uroot -p
-  262  docker exec -it 939ba175d236  mysql -uroot 
+  262  docker exec -it 939ba175d236  mysql -uroot
   263  docker exec -it 939ba175d236  mysql -uroot -p
   264  docker ps -a
   265  docker exec -it 939ba175d236  mysql -uroot -p
