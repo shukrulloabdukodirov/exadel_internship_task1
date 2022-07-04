@@ -54,7 +54,7 @@
 
     **Result:**
 
-    ![](Readme/media/image4.png)
+   ![](Readme/media/image4.png)
 
 3.    **Write a playbook for installing Docker on two machines and run it.**
 
