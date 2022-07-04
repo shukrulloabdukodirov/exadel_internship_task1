@@ -14,7 +14,7 @@
 
 3.  **3.92.223.171**
 
-    ![](media/image1.png)
+    ![](Readme/media/image1.png)
 
     Official documentation:
     <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html>
@@ -33,7 +33,7 @@
 
     ***Result:***
 
-    ![](media/image2.png)
+    ![](Readme/media/image2.png)
 
 ```{=html}
 <!-- -->
@@ -43,7 +43,7 @@
 
     **Content of** *[hosts]{.ul}* **file:**
 
-    ![](media/image3.png)
+    ![](Readme/media/image3.png)
 
     **Commands:**
 
@@ -54,14 +54,14 @@
 
     **Result:**
 
-    ![](media/image4.png)
+    ![](Readme/media/image4.png)
 
 3.    **Write a playbook for installing Docker on two machines and run
     it.**
 
     **1. Content of *[playbook.yaml]{.ul}***
 
-    ![](media/image5.png)
+    ![](Readme/media/image5.png)
 
 2.  **Commands**
 
@@ -72,15 +72,15 @@
 
     **3. Result:**
 
-    ![](media/image6.png)
+    ![](Readme/media/image6.png)
 
 ```{=html}
 <!-- -->
 ```
 1.  **Instance:**
 
-    ![](media/image7.png)
+    ![](Readme/media/image7.png)
 
 2.  **Instance:**
 
-    ![](media/image8.png)
+    ![](Readme/media/image8.png)
