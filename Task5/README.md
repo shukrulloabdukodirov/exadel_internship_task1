@@ -59,7 +59,7 @@
 3.    **Write a playbook for installing Docker on two machines and run
     it.**
 
-    **1. Content of *[playbook.yaml]{.ul}***
+    **1. Content of *[playbook.yaml]* **
 
     ![](Readme/media/image5.png)
 
@@ -68,7 +68,7 @@
 ```{=html}
 <!-- -->
 ```
-1.  ***ansible-playbook -i hosts playbook.yaml***
+1.  **ansible-playbook -i hosts playbook.yaml**
 
     **3. Result:**
 
