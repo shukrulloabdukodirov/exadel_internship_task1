@@ -50,7 +50,7 @@
 ```{=html}
 <!-- -->
 ```
-1.  *ansible servers -i hosts -m ping*
+    1.  *ansible servers -i hosts -m ping*
 
     **Result:**
 
@@ -60,7 +60,7 @@
 
    ![](Readme/media/image5.png)
 
-2.  **Commands**
+**Commands**
 
 ```{=html}
 <!-- -->
