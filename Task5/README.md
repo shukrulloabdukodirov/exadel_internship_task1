@@ -59,8 +59,6 @@
 3.    **Write a playbook for installing Docker on two machines and run
     it.**
 
-    **1. Content of *[playbook.yaml]* **
-
     ![](Readme/media/image5.png)
 
 2.  **Commands**
