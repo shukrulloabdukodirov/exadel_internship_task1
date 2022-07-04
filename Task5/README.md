@@ -67,7 +67,7 @@
 ```
 1.  **ansible-playbook -i hosts playbook.yaml**
 
-    **3. Result:**
+    **Result:**
 
     ![](Readme/media/image6.png)
 
