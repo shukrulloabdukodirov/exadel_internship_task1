@@ -1,0 +1,6 @@
+[servers]
+3.85.166.7
+3.92.223.171
+[servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/.ssh/ec2_for_work.pem
