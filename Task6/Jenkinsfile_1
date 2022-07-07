@@ -1,0 +1,11 @@
+pipeline {
+  agent any 
+  stages{
+    stage("docker-ps-command"){
+      stpes{
+        sh 'docker ps -a'
+      }
+    }
+  }
+}
+    
