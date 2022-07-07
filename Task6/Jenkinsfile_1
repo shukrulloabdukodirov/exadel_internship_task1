@@ -1,11 +1,14 @@
 pipeline {
   agent any 
+  environment{
+    SERVER_CREDENTIALS = credentials('gtihub-credentials')
+  }
   stages{
     stage("docker-ps-command"){
       steps{
         sh 'docker ps -a'
         withCredentials([
-          usernamePassword(credentials:'github-credentials', usernameVariable: USER, passwordVariable: PWD)
+          usernamePassword(credentials:'gtihub-credentials', usernameVariable: USER, passwordVariable: PWD)
         ]){
           echo "${USER} ${PWD}"
         }
