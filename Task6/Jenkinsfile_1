@@ -1,23 +1,12 @@
 pipeline {
-  agent any 
-  environment{
-    SERVER_CREDENTIALS = credentials('gtihub-credentials')
+  agent {
+    docker { image 'node:16-alpine' }
   }
-  stages{
-    stage("docker-ps-command"){
-      steps{
-        sh 'docker ps -a'
-         echo "${SERVER_CREDENTIALS_USR} ${SERVER_CREDENTIALS_PSW}" 
-      }
-    }
-    
-     stage("build docker file"){
-      steps{
-        sh 'pwd'
-        sh 'docker build -t shukrulloabdukodirov/demo-app:ja-2.0 ./Task4'
+  stages {
+    stage('Test') {
+      steps {
+        sh 'node --version'
       }
     }
   }
-  
 }
-    
