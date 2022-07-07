@@ -13,7 +13,8 @@ pipeline {
     
      stage("build docker file"){
       steps{
-        sh 'docker build -t shukrulloabdukodirov/demo-app:ja-2.0 ./../Task4/Dockerfile'
+        sh 'pwd'
+        sh 'docker build -t shukrulloabdukodirov/demo-app:ja-2.0 /Task4/Dockerfile'
       }
     }
   }
