@@ -1,0 +1,16 @@
+pipeline {
+  agent any 
+  environment{
+    SERVER_CREDENTIALS = credentials('gtihub-credentials')
+  }
+  stages{    
+     stage("build docker file"){
+      steps{
+        sh 'pwd'
+        sh 'docker build -t shukrulloabdukodirov/demo-app:ja-2.0 ./Task4'
+      }
+    }
+  }
+  
+}
+    
