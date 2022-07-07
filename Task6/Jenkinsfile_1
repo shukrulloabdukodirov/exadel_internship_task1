@@ -4,6 +4,11 @@ pipeline {
     stage("docker-ps-command"){
       steps{
         sh 'docker ps -a'
+        withCredentials([
+          usernamePassword(credentials:'github-credentials', usernameVariable: USER, passwordVariable: PWD)
+        ]){
+          echo "${USER} ${PWD}"
+        }
       }
     }
   }
