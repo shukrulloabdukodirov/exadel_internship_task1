@@ -2,7 +2,7 @@ pipeline {
   agent any 
   stages{
     stage("docker-ps-command"){
-      stpes{
+      steps{
         sh 'docker ps -a'
       }
     }
