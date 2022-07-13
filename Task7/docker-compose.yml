@@ -8,6 +8,8 @@ services:
     volumes:
       - ./elasticsearch_data/:/usr/share/elasticsearch/data
     mem_limit: "1g"
+    ports:
+      - 9200:9200
 
   redis-cache:
     image: redis:6.2
