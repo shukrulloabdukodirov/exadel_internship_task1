@@ -1,23 +1,22 @@
 pipeline {
-  agent any 
-  environment{
-    SERVER_CREDENTIALS = credentials('gtihub-credentials')
-  }
-  stages{
-    stage("docker-ps-command"){
-      steps{
+  agent none
+  stages {
+    stage('') {
+      agent {
+        docker { image 'maven:3.8.1-adoptopenjdk-11' }
+      }
+      steps {
+        sh 'mvn --version'
         sh 'docker ps -a'
-         echo "${SERVER_CREDENTIALS_USR} ${SERVER_CREDENTIALS_PSW}" 
       }
     }
-    
-     stage("build docker file"){
-      steps{
-        sh 'pwd'
-        sh 'docker build -t shukrulloabdukodirov/demo-app:ja-2.0 ./Task4'
+    stage('Node') {
+      agent {
+        docker { image 'node:16-alpine' }
+      }
+      steps {
+        sh 'node --version'
       }
     }
   }
-  
 }
-    
