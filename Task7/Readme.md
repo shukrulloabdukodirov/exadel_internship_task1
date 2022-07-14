@@ -52,7 +52,7 @@ Step1: Media type is configured
 
 ![](Readme2/Aspose.Words.0aa8ec6b-d96e-4fbb-96e8-23f7d544688a.008.png)
 
-Step2: User meil is set
+Step2: User mail is set
 
 ![](Readme2/Aspose.Words.0aa8ec6b-d96e-4fbb-96e8-23f7d544688a.009.png)
 
