@@ -12,17 +12,17 @@
 
 https://www.zabbix.com/documentation/6.0/en/manual/installation/getting\_zabbix
 
-1. Prepare VM or instances. 
+2. Prepare VM or instances. 
 
 `	`![](Readme2/Aspose.Words.0aa8ec6b-d96e-4fbb-96e8-23f7d544688a.001.png)
 
-1.2.1 Install Zabbix agents on previously prepared servers or VM.
+2.2.1 Install Zabbix agents on previously prepared servers or VM.
 
 Agent installed according to documentation.
 
 ![](Readme2/Aspose.Words.0aa8ec6b-d96e-4fbb-96e8-23f7d544688a.002.png)
 
-1. Make several of your own dashboards, where to output data from your host/vm/container (one of them)
+3. Make several of your own dashboards, where to output data from your host/vm/container (one of them)
 
 `	`Step1: Host created.
 
@@ -32,7 +32,7 @@ Step2: Items created
 
 ![](Readme2/Aspose.Words.0aa8ec6b-d96e-4fbb-96e8-23f7d544688a.004.png)
 
-1. Active check vs passive check - use both types.
+4. Active check vs passive check - use both types.
 
 Passive check:
 
@@ -42,11 +42,11 @@ Active check:
 
 ![](Readme2/Aspose.Words.0aa8ec6b-d96e-4fbb-96e8-23f7d544688a.006.png)
 
-1. Make an agentless check of any resource (ICMP ping)
+5. Make an agentless check of any resource (ICMP ping)
 
 ![](Readme2/Aspose.Words.0aa8ec6b-d96e-4fbb-96e8-23f7d544688a.007.png)
 
-1. Provoke an alert - and create a Maintenance instruction
+6. Provoke an alert - and create a Maintenance instruction
 
 Step1: Media type is configured
 
@@ -68,7 +68,7 @@ Result:
 
 ![](Readme2/Aspose.Words.0aa8ec6b-d96e-4fbb-96e8-23f7d544688a.012.png)
 
-1. **Set up a dashboard with infrastructure nodes and monitoring of hosts and software installed on them**
+6. **Set up a dashboard with infrastructure nodes and monitoring of hosts and software installed on them**
 
 In the sidebar Dashboard->Edit or Crfeate Dashboard. It is possible create infographics. For graphs info we use items which is created above.
 
